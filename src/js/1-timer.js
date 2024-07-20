@@ -55,7 +55,7 @@ function startTimer(endTime) {
 
     const { days, hours, minutes, seconds } = convertMs(distance);
 
-    daysEl.textContent = days;
+    daysEl.textContent = addLeadingZero(days);
     hoursEl.textContent = addLeadingZero(hours);
     minutesEl.textContent = addLeadingZero(minutes);
     secondsEl.textContent = addLeadingZero(seconds);
